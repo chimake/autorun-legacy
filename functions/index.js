@@ -97,9 +97,9 @@ exports.setup = functions.https.onRequest((request, response) => {
             } 
         },
         "settings": {
-            "code": "USD",
+            "code": "NGN",
             "panic": "991",
-            "symbol": "$",
+            "symbol": "₦",
             "driver_approval": true,
             "otp_secure": false,
             "email_verify": true,
