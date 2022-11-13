@@ -155,7 +155,7 @@ export const fetchUser = () => (dispatch) => (firebase) => {
               type: USER_SIGN_OUT,
               payload: null
             });
-            alert('Base Settings Error 2');
+            alert('Base Settings Error 2 '+error);
           })
       } catch (error) {
         auth.signOut();
