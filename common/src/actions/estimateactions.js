@@ -59,6 +59,12 @@ export const getEstimate = (bookingData) => (dispatch) => (firebase) => {
         payload: "No Route Found",
       });
     }
+  }).catch(error => {    
+    dispatch({
+      type: FETCH_ESTIMATE_FAILED,
+      payload: "No Route Found "+error,
+    });
+   
   });
 }
 
