@@ -6,19 +6,7 @@ const language = require('./language.json');
 
 admin.initializeApp();
 
-const providers = [
-    'paypal',
-    'braintree',
-    'stripe',
-    'paytm',
-    'payulatam',
-    'flutterwave',
-    'paystack',
-    'securepay',
-    'payfast',
-    'liqpay',
-    'culqi'
-]
+const providers = []
 
 exports.paypal = require('./providers/paypal');
 exports.braintree = require('./providers/braintree');
