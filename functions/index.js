@@ -380,7 +380,7 @@ exports.get_route_details = functions.https.onRequest(async (request, response) 
             polylinePoints:json.routes[0].overview_polyline.points
         });
     }else{
-        response.send({ error: 'No route found' });
+        response.send({ error: 'No route found Json: '+json });
     }
 });
 

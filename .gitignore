@@ -18,3 +18,4 @@ npm-debug.*
 web-build/
 web-report/
 .vscode
+config/mainconfig.js
