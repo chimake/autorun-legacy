@@ -95,7 +95,7 @@ export const fetchUser = () => (dispatch) => (firebase) => {
         })
           .then(response => response.json())
           .then((res) => {
-            if (res.success) {
+            
               settingsRef.once("value", settingdata => {
                 let settings = settingdata.val();
                 let password_provider_found = false;
@@ -140,16 +140,7 @@ export const fetchUser = () => (dispatch) => (firebase) => {
                   });
                 }
               });
-            }
-            else {
-              auth.signOut();
-              dispatch({
-                type: USER_SIGN_OUT,
-                payload: null
-              });
-              console.log(res);
-              alert('Base Settings Error 2');
-            }
+            
           }).catch(error => {
             auth.signOut();
             dispatch({
